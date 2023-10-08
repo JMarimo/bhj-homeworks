@@ -5,10 +5,10 @@ let xhr = new XMLHttpRequest();
 xhr.open("GET", url);
 
 xhr.onreadystatechange = function(event) {
-    if(this.readyState === 4 && this.status === 200) {
-        let responseText = this.responseText;
-        let parsedResponse = JSON.parse.parse(responseText);
-        let valuteObj = parsedResponse.response.Valute;
+    if(this.readyState === 4 && this.status === 201) {
+        const responseText = this.responseText;
+        const parsedResponse = JSON.parse(responseText);
+        const valuteObj = parsedResponse.response.Valute;
 
         for(const currencyCode in valuteObj) {
             if(valuteObj.hasOwnProperty(currencyCode)) {
