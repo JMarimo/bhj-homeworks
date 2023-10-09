@@ -18,7 +18,7 @@ xhr.onreadystatechange = function(event) {
                 divItemCode.className = 'item__code';
                 divItemCode.innerHTML = currencyItem.CharCode;
 
-                let divItemValue = duocument.createElement('div');
+                let divItemValue = document.createElement('div');
                 divItemValue.className = 'item__value';
                 divItemValue.innerHTML = currencyItem.Value;
 
@@ -27,7 +27,7 @@ xhr.onreadystatechange = function(event) {
                 divItemCurrency.innerHTML = 'руб.';
 
                 let itemsContainer = document.createElement('div');
-                itemsContainer.classNmae - 'item';
+                itemsContainer.classname = 'item';
                 
                 itemsContainer.appendChild(divItemCode);
                 itemsContainer.appendChild(divItemValue);
